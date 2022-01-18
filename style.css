@@ -31,7 +31,7 @@ a:hover {
     width: 100%;
     clear: both;
     background: 50% 50% no-repeat;
-    padding: 0 50px;
+    
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -48,6 +48,12 @@ a:hover {
     padding: 100px 50px;
 }
 
+.contact-txt{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 .bloc-md {
     padding: 50px;
 }
