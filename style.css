@@ -79,6 +79,7 @@ a:hover {
 .bg-t-edge {
     background: top no-repeat;
 }
+/* supprimez pour favoriser l'accessibilité
 
 .bloc-bg-texture::before {
     content: "";
@@ -94,6 +95,7 @@ a:hover {
     background: url("img/texture-paper.png");
     background-size: 280px 280px;
 }
+*/
 
 .b-parallax {
     background-attachment: fixed;
@@ -708,7 +710,7 @@ h2 {
     font-size: 22px;
     line-height: 1.4em;
 }
-.italic{
+h2.italic{
     font-style: italic;
 }
 
@@ -817,7 +819,7 @@ h4 {
 }
 
 .bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.png");
+    background-image: url("/lines-h2-bg.png");
 }
 
 .bg-banniere {
@@ -825,7 +827,7 @@ h4 {
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.jpg");
 }
 
 @media (max-width: 1024px) {
