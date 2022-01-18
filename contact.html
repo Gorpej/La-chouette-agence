@@ -63,7 +63,7 @@
 
 		<!-- bloc-6 -->
 		<div class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper" id="bloc-6">
-			<div class="bloc-lg contact-txt">
+			<div class="container bloc-lg contact-txt">
 				<div class="row">
 					<div class="col-sm-12">
 						<h1 class="text-center hero-bloc-text tc-white">
@@ -87,28 +87,30 @@
 						<form id="form_1" novalidate success-msg="Your message has been sent."
 							fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
 							<div class="form-group">
-								<label>
+								<label for="name">
 									Nom
-									<input id="name" class="form-control" required />
 								</label>
+								<input id="name" class="form-control" required aria-required="true" />
 							</div>
 							<div class="form-group">
-								<label>
+								<label for="email">
 									Adresse email
-									<input id="email" class="form-control" type="email" required />
 								</label>
+								<input id="email" class="form-control" type="email" required aria-required="true" />
 							</div>
 							<div class="form-group">
 								<label>
 									Comment nous avez-vous connu ?
-									<input class="form-control" type="email" required id="input_504" />
 								</label>
+								<input class="form-control" type="email" required id="input_504"
+									aria-required="false" />
 							</div>
 							<div class="form-group">
-								<label>
+								<label for="message">
 									Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-									<textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
 								</label>
+								<textarea id="message" class="form-control" rows="4" cols="50" required
+									aria-required="true"></textarea>
 							</div>
 							<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine"
 								type="submit">
