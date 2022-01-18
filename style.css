@@ -79,7 +79,6 @@ a:hover {
 .bg-t-edge {
     background: top no-repeat;
 }
-/* supprimez pour favoriser l'accessibilité
 
 .bloc-bg-texture::before {
     content: "";
@@ -95,7 +94,6 @@ a:hover {
     background: url("img/texture-paper.png");
     background-size: 280px 280px;
 }
-*/
 
 .b-parallax {
     background-attachment: fixed;
