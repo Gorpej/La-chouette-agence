@@ -7,8 +7,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-a,
-button {
+a, button {
     transition: all .3s ease-in-out;
     outline: none!important;
 }
@@ -645,7 +644,6 @@ a[data-lightbox]:hover img {
     background: none;
 }
 
-h1,
 h2,
 h3,
 h4,
@@ -684,6 +682,7 @@ a {
 
 p {
     font-size: 14px;
+    color: #1F1F1F ;
 }
 
 .tight-width-whitespace {
@@ -694,6 +693,7 @@ p {
 .h1 {
     font-size: 20px;
     font-family: "Open Sans";
+    color:#E8E8E8;
 }
 
 .cta-hero {
@@ -708,6 +708,7 @@ p {
 .social {
     max-width: 400px;
     margin: auto auto auto auto;
+    color: #212121;
 }
 
 h2 {
@@ -732,7 +733,7 @@ h3 {
 }
 
 h1 {
-    color: #333333!important;
+    color: #E8E8E8;
 }
 
 h4 {
@@ -746,6 +747,10 @@ h4 {
 
 .white {
     color: #FFFFFF!important;
+}
+
+.black{
+    color: #212121!important;
 }
 
 .portfolio-thumb {
@@ -784,7 +789,7 @@ h4 {
 }
 
 .tc-white {
-    color: #1C1C1C!important;
+    color: #E8E8E8!important;
 }
 
 .btn-atomic-tangerine {
@@ -857,13 +862,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -881,10 +886,14 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
+
+    /*
     .bloc {
         padding-left: constant(safe-area-inset-left);
         padding-right: constant(safe-area-inset-right);
     }
+    */
+
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -892,9 +901,8 @@ h4 {
     }
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
-        padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+        padding:0 20px;
+
     }
 }
 
